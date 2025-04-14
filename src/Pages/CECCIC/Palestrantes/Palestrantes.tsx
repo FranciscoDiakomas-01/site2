@@ -3,18 +3,21 @@ import "./Palestrantes.css";
 import "../../CECCIC/animations.css";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { FaUser, FaPhone, FaUsers } from "react-icons/fa";
-import Sauré_Baldé from "../../../assets/Sauré Baldé.jpg";
-import PhD_Jean_Karim_Coly from "../../../assets/PhD.Jean Karim Coly.jpg";
-import Ph_D_João_Salm from "../../../assets/Ph-D. João Salm.jpg";
-import Patricia_Lobo from "../../../assets/Patricia Lobo.jpg";
-import João_Kanda from "../../../assets/João Kanda.jpg";
-import Janealle_Neri from "../../../assets/Janealle  Neri.jpg";
-import Eng_Horacio_Pina_Prata from "../../../assets/Eng.Horacio Pina Prata.jpg";
-import Dra_Alice_dos_Anjos from "../../../assets/Dra.Alice dos Anjos.jpg";
-import Dra_Catarina_Munguambe from "../../../assets/Dra. Catarina Munguambe.jpg";
-import Barbara_Andrade from "../../../assets/Barbara Andrade.jpg";
-import Sr_Jefferson_Olivereira from "../../../assets/Sr. Jefferson Olivereira.jpg";
-import Comendador_José_Ferreira from "../../../assets/Comendador José Ferreira Morais.jpg";
+import Sauré_Baldé from "../../../images/WhatsApp Image 2025-04-14 at 09.31.17.jpeg";
+import PhD_Jean_Karim_Coly from "../../../images/WhatsApp Image 2025-04-14 at 09.31.09 (1).jpeg";
+import Ph_D_João_Salm from "../../../images/WhatsApp Image 2025-04-14 at 09.31.09 (2).jpeg";
+import Patricia_Lobo from "../../../images/WhatsApp Image 2025-04-14 at 09.31.09 (3).jpeg";
+import João_Kanda from "../../../images/WhatsApp Image 2025-04-14 at 09.31.09.jpeg";
+import Janealle_Neri from "../../../images/WhatsApp Image 2025-04-14 at 09.31.10 (1).jpeg";
+import Eng_Horacio_Pina_Prata from "../../../images/WhatsApp Image 2025-04-14 at 09.31.11 (1).jpeg";
+import Dra_Alice_dos_Anjos from "../../../images/WhatsApp Image 2025-04-14 at 09.31.12.jpeg";
+import Dra_Catarina_Munguambe from "../../../images/WhatsApp Image 2025-04-14 at 09.31.13 (1).jpeg";
+import Barbara_Andrade from "../../../images/WhatsApp Image 2025-04-14 at 09.31.14.jpeg";
+import Sr_Jefferson_Olivereira from "../../../images/WhatsApp Image 2025-04-14 at 09.31.15.jpeg";
+import Comendador_José_Ferreira from "../../../images/WhatsApp Image 2025-04-14 at 09.31.16.jpeg";
+import im2 from "../../../images/WhatsApp Image 2025-04-14 at 09.31.17.jpeg";
+import im23 from "../../../images/WhatsApp Image 2025-04-14 at 09.31.18.jpeg";
+import im24 from "../../../images/WhatsApp Image 2025-04-14 at 09.31.23.jpeg";
 
 // Dados dos palestrantes
 const palestrantes = [
@@ -101,6 +104,27 @@ const palestrantes = [
     cargo: "Presidente do CECCIC",
     instituicao: "CECCIC",
     imagem: Comendador_José_Ferreira,
+  },
+  {
+    id: 12,
+    nome: "Comendador José Ferreira",
+    cargo: "Presidente do CECCIC",
+    instituicao: "CECCIC",
+    imagem: im2,
+  },
+  {
+    id: 12,
+    nome: "Comendador José Ferreira",
+    cargo: "Presidente do CECCIC",
+    instituicao: "CECCIC",
+    imagem: im23,
+  },
+  {
+    id: 12,
+    nome: "Comendador José Ferreira",
+    cargo: "Presidente do CECCIC",
+    instituicao: "CECCIC",
+    imagem: im24,
   },
 ];
 
@@ -205,6 +229,7 @@ const Palestrantes: React.FC = () => {
               <div className="palestrante-card">
                 <div className="palestrante-imagem">
                   <img src={palestrante.imagem} alt={palestrante.nome} />
+<<<<<<< HEAD
                 </div>{" "}
                 <div className="palestrante-info">
                   <strong className="palestrante-nome ">
@@ -214,6 +239,8 @@ const Palestrantes: React.FC = () => {
                     {palestrante.instituicao}
                   </p>
                   <p className="palestrante-cargo">{palestrante.cargo}</p>
+=======
+>>>>>>> 35ad08511e1fc5f74ef3688334b5aea0ba705061
                 </div>
               </div>
             </div>

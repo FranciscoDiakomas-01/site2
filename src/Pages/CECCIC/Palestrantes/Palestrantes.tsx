@@ -159,7 +159,7 @@ const Palestrantes: React.FC = () => {
     console.log(data);
     if (data.error) {
       alert(data.error);
-    }else {
+    } else {
       const id = data as { id: number }[];
       console.log(id[0].id);
       alert(`Código da Inscrição ${id[0].id}`);
@@ -205,13 +205,15 @@ const Palestrantes: React.FC = () => {
               <div className="palestrante-card">
                 <div className="palestrante-imagem">
                   <img src={palestrante.imagem} alt={palestrante.nome} />
-                </div>
+                </div>{" "}
                 <div className="palestrante-info">
-                  <h3 className="palestrante-nome">{palestrante.nome}</h3>
-                  <p className="palestrante-cargo">{palestrante.cargo}</p>
+                  <strong className="palestrante-nome ">
+                    {palestrante.nome}
+                  </strong>
                   <p className="palestrante-instituicao">
                     {palestrante.instituicao}
                   </p>
+                  <p className="palestrante-cargo">{palestrante.cargo}</p>
                 </div>
               </div>
             </div>

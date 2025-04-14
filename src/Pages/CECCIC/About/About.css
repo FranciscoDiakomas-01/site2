@@ -6,6 +6,14 @@
     min-height: 100vh;
 }
 
+
+#spann{
+    display: flex;
+    width: 300px;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 20px;
+}
 .text {
     color: white;
     text-align: left;
@@ -192,6 +200,10 @@
         font-size: 35px;
         margin-top: 150px;
     }
+    #banner1 {
+        display: none;
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -216,6 +228,15 @@
 }
 
 @media (max-width: 768px) {
+     #banner1:last-of-type {
+        display: flex;
+    }
+    #banner1.special {
+        display: flex;
+    }
+     #banner2{
+        display: none;
+    }
     .container {
         flex-direction: column;
         padding: 20px;
